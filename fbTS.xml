@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="mgodd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="mgodd.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Fleabag : The Encoding</title>
+            <author>
+               <persName>
+                  <forename>Eva</forename>
+                  <surname>Riviere</surname>
+               </persName>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <authority>
+               <persName>
+                  <forename>Katarzyna</forename>
+                  <surname>Kapitan</surname>
+               </persName>
+            </authority>
+            <pubPlace>Ecole nationale des chartes</pubPlace>
+            <date> 2025-11-17</date>
+            <availability>
+               <licence>This file is available under a Creative Commons Attribution 4.0 licence:
+                     <ref type="url" target="https://creativecommons.org/licenses/by/4.0/deed.en"
+                     >https://creativecommons.org/licenses/by/4.0/deed.en</ref>. </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="book">
+               <author>
+                  <persName xml:id="FWB">
+                     <forename>Phoebe</forename>
+                     <surname>Waller-Bridge</surname>
+                  </persName>
+               </author>
+               <title>Fleabag: The Scriptures</title>
+               <publisher>Ballantine Books</publisher>
+               <pubPlace>New York</pubPlace>
+               <date when="2019-11-26">26 November 2019</date>
+               <edition>First edition</edition>
+               <extent>432 pages</extent>
+               <dim>6 × 8½ inches (approx. 157 × 223 mm)</dim>
+               <idno type="ISBN">978-0-593-15827-2</idno>
+               <lang xml:lang="en">English</lang>
+            </bibl>
+            <bibl type="online">
+               <title>Fleabag: The Scriptures (PDF version)</title>
+               <availability status="unknown">
+                  <p>Original PDF uploaded by an online user; copyright status unclear.</p>
+               </availability>
+               <distributor>
+                  <name type="pseudo">WellvetThundr</name>
+               </distributor>
+               <idno type="URL"
+                  >https://drive.google.com/file/d/1QRvPYZXMw4QhNVsBtFKUVJ6LUY0SwdPJ/view</idno>
+               <note>This digital version corresponds to the published book but uploaded by
+                  third-party; rights unknown.</note>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>This project was completed for an XML–TEI class and focuses on encoding television
+               scripts using TEI All. It aims to explore descriptive encoding, cast representation,
+               and structural markup in audiovisual storytelling.</p>
+         </projectDesc>
+         <appInfo>
+            <application ident="Oxygen-XML-Editor" version="27.1">
+               <desc>Oxygen XML Editor is a cross platform tool setting the standard in XML editing.
+               </desc>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <profileDesc rendition="https://www.imdb.com/fr/title/tt6733136/?ref_=tt_eps_tp">
+         <!-- not a huge fan of this but it was the only element I find capable of holding a complete equivalent of a cast list in the header -->
+         <creation>
+            <date type="publication" when="2019-03-04">4 March 2019</date>
+            <persName role="directeur">
+               <forename>Harry</forename>
+               <surname>Bradbeer</surname>
+            </persName>
+            <persName role="writter" ref="#FWB">
+               <forename>Phoebe</forename>
+               <surname>Waller-Bridge</surname>
+            </persName>
+         </creation>
+         <particDesc>
+            <listPerson>
+               <person  gender="W" xml:id="F">
+                  <persName>
+                     <forename>Phoebe</forename>
+                     <surname>Waller-Bridge</surname>
+                  </persName>
+                  <state type="role" subtype="main">
+                     <label>Fleabag</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Fleabag">
+                        Fleabag is a thirty-three year old single woman and the main character of the eponymous series.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="W" xml:id="C">
+                  <persName>
+                     <forename>Sian</forename>
+                     <surname>Clifford</surname>
+                  </persName>
+                  <state type="role" subtype="main" >
+                     <label>Claire</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Claire">
+                        Claire is a main character in the first and second series of the comedy drama Fleabag. She is Fleabag's sister.
+                        She was married to Martin, and was step-mother to his son, Jake. She has a strained relationship with her sister Fleabag, but obviously really loves her.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="M" xml:id="P">
+                  <persName>
+                     <forename>Andrew</forename>
+                     <surname>Scott</surname>
+                  </persName>
+                  <state type="role" subtype="main" >
+                     <label>The Priest</label>
+                     <desc source="https://fleabag.fandom.com/wiki/The_Priest">
+                        The Priest is a main character in the second series of Fleabag.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="M" xml:id="D">
+                  <persName>
+                     <forename>Bill</forename>
+                     <surname>Paterson</surname>
+                  </persName>
+                  <state type="role" subtype="supporting" >
+                     <label>Dad</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Dad">
+                        Dad is a main character in the first and second series of the comedy drama Fleabag.
+                        He is the father of Fleabag and Claire. His first wife died of cancer and he remarried his daughter's Godmother.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="W" xml:id="G">
+                  <persName>
+                     <forename>Olivia</forename>
+                     <surname>Coleman</surname>
+                  </persName>
+                  <state type="role" subtype="supporting" >
+                     <label>Godmother</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Godmother">
+                        Godmother is a main character in the first and second series of the comedy drama Fleabag.
+                        She is Dad's second wife, and step-mother to Fleabag and Claire.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="M" xml:id="M">
+                  <persName>
+                     <forename>Brett</forename>
+                     <surname>Gelman</surname>
+                  </persName>
+                  <state type="role" subtype="supporting" >
+                     <label>Martin</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Martin">
+                        Martin is a recurring character in the first and second series of the comedy drama Fleabag.
+                        He is Claire's husband.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="W" xml:id="B">
+                  <persName>
+                     <forename>Jenny</forename>
+                     <surname>Rainsford</surname>
+                  </persName>
+                  <state type="role" subtype="supporting" >
+                     <label>Boo</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Boo">
+                        Boo is a recurring character in the first and second series of the comedy drama Fleabag.
+                        She was Fleabag's best friend, and co-owner of the cafe that the two of them ran.
+                     </desc>
+                  </state>
+               </person>
+               <person gender="M" xml:id="AG">
+                  <persName>
+                     <forename>Ben</forename>
+                     <surname>Aldrige</surname>
+                  </persName>
+                  <state type="role" subtype="supporting" >
+                     <label>Arsehole Guy</label>
+                     <desc source="https://fleabag.fandom.com/wiki/Arsehole_Guy">
+                        Arsehole Guy is a recurring character in the first and second series of the comedy drama Fleabag.
+                        He is one of Fleabag's on-again, off-again lovers.
+                     </desc>
+                  </state>
+               </person>
+            </listPerson>
+         </particDesc>
+         <textDesc>
+            <channel>television</channel>
+            <constitution type="frags">3078 first caracter of the firt episode of the season two
+               scipture</constitution>
+            <derivation type="excerpt"/>
+            <domain>public</domain>
+            <factuality>fiction</factuality>
+            <interaction source="https://www.imdb.com/fr/title/tt6733136/ratings/?ref_=tt_ov_rat"
+               >9,2/10</interaction>
+            <preparedness>scripted</preparedness>
+            <purpose type="entertain">entertainment; dramatic narrative</purpose>
+         </textDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>SERIES TWO</head>
+         </div>
+         <div>
+            <head>EPISODE ONE</head>
+            <stage type="setting">INT. COOL RESTAURANT. BATHROOM – NIGHT</stage>
+            <sound type="music">Frank Sinatra’s ‘Strangers in the Night’ plays.</sound>
+            <view><camera>Wide shot</camera> of <ref corresp="#F">FLEABAG </ref>from behind as she
+               stands at a sink. Her head is bowed down as she is washing her hands. We can’t see
+               her face. She looks up into the mirror. We see that there is blood all over her
+               mouth. She takes a damp towel and wipes most of the blood off her mouth and nose.
+               There is a <sound>bang</sound> on the door. She ignores it.</view>
+
+            <sp>
+               <speaker/>
+               <p>test <tech type="montage">test</tech> test</p>
+            </sp>
+
+            <sp rend="off screen">
+               <speaker corresp="#P">MAN</speaker>
+               <view>(O.S.)</view>
+               <p>Can I do anything?</p>
+            </sp>
+            <sp>
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>No, thank you.</p>
+            </sp>
+            <sp rend="off screen">
+               <speaker corresp="#P">MAN</speaker>
+               <view>(O.S.)</view>
+               <p>They’ve gone, so …</p>
+            </sp>
+            <view>She grabs a few tissues and hands them casually to a NEEDY WAITRESS, who, we
+               discover, is sitting, slumped on the floor with blood on her face and a bruised
+               eye.</view>
+            <sp>
+               <speaker>NEEDY WAITRESS</speaker>
+               <stage type="delivery">(grateful, sweet)</stage>
+               <p>Thank you.</p>
+            </sp>
+            <view><ref corresp="#F">Fleabag</ref> smiles at her. She checks her hair in the mirror.
+               Takes a breath.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>This is a love story.</p>
+            </sp>
+            <ab>TITLES: <caption><ref corresp="#F">FLEABAG</ref></caption></ab>
+            <sound type="music">Soaring choral music over titles and perhaps next scene, rather than
+               the discordance of last series.</sound>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <stage type="setting">Earlier that evening</stage>
+            <view><camera>Close-up</camera> of <ref corresp="#F">Fleabag</ref>. She is sat at a
+               restaurant table holding a glass of champagne. She looks well.</view>
+            <view>We can’t see who else is at the table. We can only see the restaurant glittering
+               and bustling behind her.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>You know when you’ve done … everything.</p>
+               <stage type="timing">(beat)</stage>
+               <p>When you’ve been all—</p>
+            </sp>
+            <stage type="setting">EXT. FLASHBACK, PARK – DAY</stage>
+            <view><ref corresp="#F">Fleabag</ref> is doing squats in a park with a DRILL SERGEANT
+               kind of guy.</view>
+            <view>He is <sound type="delivery">shouting</sound> at her.</view>
+            <sp>
+               <speaker>DRILL SERGEANT</speaker>
+               <p>SQUAT. SQUAT.</p>
+            </sp>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view>Back at the table with <ref corresp="#F">Fleabag</ref>.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>And—</p>
+            </sp>
+            <stage type="setting">INT. FLASHBACK, CAFÉ – DAY</stage>
+            <view>Shot of a piece of rye bread/pumpernickel with sliced avocado and feta cheese and
+               chopped baby tomato on it.</view>
+            <view><ref corresp="#F">Fleabag</ref> chops it in half and looks at the camera
+                  <stage>very seriously.</stage></view>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view>Back at the table with <ref corresp="#F">Fleabag</ref>.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>You’ve even—</p>
+            </sp>
+            <stage type="setting">EXT. FLASHBACK, <ref corresp="#AG">ARSEHOLE GUY</ref>’S FLAT –
+               EVENING</stage>
+            <view><camera>Close</camera> on <ref corresp="#AG">ARSEHOLE GUY</ref> looking
+               seductively at <ref corresp="#F">Fleabag</ref>.</view>
+            <sp>
+               <speaker><ref corresp="#AG">ARSEHOLE GUY</ref></speaker>
+               <p>Wanna have sex?</p>
+            </sp>
+            <stage type="timing">beat</stage>
+            <stage type="modifier"><ref corresp="#F">Fleabag</ref> is conflicted.</stage>
+            <sp>
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>No.</p>
+            </sp>
+            <view>She turns and runs away down the street.</view>
+            <sp>
+               <speaker><ref corresp="#AG">ARSEHOLE GUY</ref></speaker>
+               <stage type="delivery">(calling after her, desperate)</stage>
+               <p>Can I at least go down on you?!</p>
+            </sp>
+            <sp>
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>NO!</p>
+            </sp>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view>Back at the table with <ref corresp="#F">Fleabag</ref>.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>You’ve done everything. And you feel great.</p>
+            </sp>
+            <stage type="setting">INT. FLASHBACK, PUB – EVENING</stage>
+            <view><ref corresp="#F">Fleabag</ref> laughing with a bunch of ‘friends’ we’ve never
+               seen before and will never see again.</view>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view>Back at the table with <ref corresp="#F">Fleabag</ref>.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>You’re not even thinking about—</p>
+            </sp>
+            <stage type="setting">EXT. FLASHBACK, PARK – DAY</stage>
+            <view><ref corresp="#B">BOO</ref> putting a tiny hat on Hilary’s head and looking up at
+               us, very pleased with it.</view>
+            <stage type="timing"><ref corresp="#F">Fleabag</ref>’s dialogue cuts it off
+               again.</stage>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view>Back at the table with <ref corresp="#F">Fleabag</ref>.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>You don’t even think about—</p>
+            </sp>
+            <stage type="setting">EXT. FLASHBACK FROM LAST SERIES: <ref corresp="#C">CLAIRE</ref>’S
+               HOUSE – NIGHT</stage>
+            <view><ref corresp="#M">MARTIN</ref> kissing <ref corresp="#F">Fleabag</ref> on <ref
+                  corresp="#C">CLAIRE</ref> ’s birthday from the last series.</view>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view><ref corresp="#F">Fleabag</ref> passes bread across to her left –</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>And even though your sister still hates you.</p>
+            </sp>
+            <view>We reveal <ref corresp="#C">Claire</ref> eyeing <ref corresp="#F">Fleabag</ref>.
+               She gives a tight smile as she accepts the bread.</view>
+            <sp>
+               <speaker corresp="#C">CLAIRE</speaker>
+               <p>Thank you.</p>
+            </sp>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>You’re pretending to be friends because your dad is—</p>
+            </sp>
+            <stage type="setting">EXT. GRAVESIDE – DAY</stage>
+            <view><ref corresp="#F">Fleabag</ref> and <ref corresp="#C">Claire</ref> are standing by
+               a grave.</view>
+            <stage type="setting">INT. RESTAURANT – NIGHT</stage>
+            <view>Back at the table with <ref corresp="#F">Fleabag</ref> and <ref corresp="#C"
+                  >Claire</ref>.</view>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>I’m joking, he’s just there.</p>
+            </sp>
+            <view>We reveal <ref corresp="#D">DAD</ref> sitting next to <ref corresp="#G"
+                  >GODMOTHER</ref> , with her hand on his.</view>
+            <sp>
+               <speaker corresp="#G">GODMOTHER</speaker>
+               <stage type="move">(holding up her glass)</stage>
+               <p>Here’s to love!</p>
+            </sp>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>And engaged.</p>
+            </sp>
+            <view>They all cheer.</view>
+            <sp>
+               <speaker corresp="#F">FLEABAG</speaker>
+               <p>To love!</p>
+            </sp>
+            <sp>
+               <speaker corresp="#F #C #D #G #M #P">EVERYONE</speaker>
+               <p>To love!</p>
+            </sp>
+            <stage type="entrance">Suddenly <ref corresp="#M">Martin</ref> arrives.</stage>
+            <sp>
+               <speaker corresp="#M">MARTIN</speaker>
+               <p>HEEEEEY!</p>
+            </sp>
+            <sp toWhom="public">
+               <speaker corresp="#F">FLEABAG</speaker>
+               <stage type="address">(to camera)</stage>
+               <p>Ugh.</p>
+            </sp>
+            <sp>
+               <speaker corresp="#M">MARTIN</speaker>
+               <stage type="address">(to <ref corresp="#D">Dad</ref> and <ref corresp="#G"
+                     >Godmother</ref>)</stage>
+               <p>CONGRATULATIONS YOU ASSHOLES!</p>
+            </sp>
+            <view>He kisses a smiling <ref corresp="#C">Claire</ref> from behind as he
+               speaks.</view>
+            <view><ref corresp="#D">Dad</ref> and <ref corresp="#G">Godmother</ref> laugh happily.
+               Everyone laughs happily.</view>
+            <view><ref corresp="#F">Fleabag</ref> looks to camera. <stage type="acting"
+               >Ugh.</stage></view>
+         </div>
+      </body>
+   </text>
+</TEI>
